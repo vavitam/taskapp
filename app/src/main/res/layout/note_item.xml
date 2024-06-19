@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/edt_box_stroke_note"
+    android:padding="20dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginTop="10dp"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/tvTitleNote"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        android:layout_marginBottom="5dp"
+        android:text="Tiêu đề" />
+
+    <TextView
+        android:id="@+id/tvContentNote"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="17dp"
+        android:textColor="#595959"
+        android:maxLines="8"
+        android:ellipsize="end"
+        android:text="Nội dung amnsc,mnascnkansclándlkaknsdklandknaskdnamsdnmansdnansmdbamsdbadnskjansdklasdnlkansdlkansdlkansdlkansdlknadlknakldsajksdnaddđ ajsdnkasdnlkadajsdlad nadlksandlknasd kandsklad adnsalkdnklads kandsknadlks kandlkand andlksandlkasd kandslkandskna kansdklansdkdn kandsknaskndsa andslkandkla akdnsakldsnlkasdna ansdalksdnad kandsaknds akndslaknd akndslkadns andskads kadnkadns asdnlakdnkad kandlkansdl akndslkadnlkad andskladnlkad andslkandlkad adnslkandlkasd knadkandslkda kandlkansdlkads kansdlkandslkad kandladsnln andslkadsnlkahanlksdnkansdknad" />
+</LinearLayout>

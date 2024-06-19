@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background_1"
+    tools:context=".AccountActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:paddingLeft="10dp"
+        android:background="@color/background"
+        android:layout_marginBottom="30dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/btnLeftTask"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:backgroundTint="@color/dartmouthGreen"
+            android:background="@drawable/icon_back"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:textSize="25dp"
+            android:gravity="center"
+            android:textColor="@color/dartmouthGreen"
+            android:text="Trang cá nhân"/>
+
+        <TextView
+            android:id="@+id/btnMoreTask"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:textSize="40dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/edt_box_stroke_account"
+        android:paddingBottom="10dp">
+
+<!--        <ImageView-->
+<!--            android:id="@+id/imageAvtAccount"-->
+<!--            app:shapeAppearanceOverlay="@style/ImageViewCircleOverlay"-->
+<!--            android:layout_width="150dp"-->
+<!--            android:layout_height="150dp"-->
+<!--            android:layout_marginTop="10dp"-->
+<!--            android:layout_gravity="center"-->
+<!--            app:srcCompat="@drawable/icon_account" />-->
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/imageAvtAccount"
+            android:layout_marginTop="10dp"
+            android:layout_width="156dp"
+            android:layout_height="156dp"
+            app:shapeAppearanceOverlay="@style/ImageViewCircleOverlay"
+            android:background="@drawable/background_1"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:id="@+id/tvNameAccount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:layout_gravity="center"
+            android:textColor="@color/pigmentGreen"
+            android:text="Văn Viết Tâm" />
+
+        <TextView
+            android:id="@+id/tvEditAccount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/dartmouthGreen"
+            android:textStyle="bold|italic"
+            android:layout_marginTop="5dp"
+            android:layout_gravity="center"
+            android:text="Chỉnh sửa thông tin" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvTongQuan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tổng quan về nhiệm vụ"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/dartmouthGreen"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textSize="20dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:paddingBottom="10dp"
+        android:layout_marginTop="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingTop="20dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingBottom="20dp"
+            android:background="@drawable/edt_box_stroke_account"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvDaHoanThanh"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="12"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                android:textColor="@color/pigmentGreen"
+                android:layout_gravity="center"
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nhiệm vụ đã hoàn thành"
+                android:textSize="17dp"
+                android:textColor="@color/pigmentGreen"
+                android:layout_gravity="center"
+                android:gravity="center"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="328dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:background="@drawable/edt_box_stroke_account"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="20dp"
+            android:paddingTop="20dp"
+            android:paddingRight="20dp"
+            android:paddingBottom="20dp">
+
+            <TextView
+                android:id="@+id/tvChuaHoanThanh"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="12"
+                android:textColor="@color/pigmentGreen"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="Nhiệm vụ chưa hoàn thành"
+                android:textColor="@color/pigmentGreen"
+                android:textSize="17dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tổng quan về ghi chú"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/dartmouthGreen"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textSize="20dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:paddingBottom="10dp"
+        android:layout_marginTop="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edt_box_stroke_account"
+            android:layout_weight="1"
+            android:paddingTop="20dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingBottom="20dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvGhiChu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="12"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:textColor="@color/pigmentGreen"
+                android:gravity="center"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ghi chú đã đươc lưu trữ"
+                android:textColor="@color/pigmentGreen"
+                android:textSize="17dp"
+                android:layout_gravity="center"
+                android:gravity="center"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

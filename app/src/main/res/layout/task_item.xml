@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:layout_height="wrap_content"
+    android:layout_marginRight="20dp"
+    android:layout_marginLeft="20dp"
+    android:layout_marginBottom="10dp"
+    android:paddingTop="10dp"
+    android:paddingRight="10dp"
+    android:paddingBottom="10dp"
+    android:background="@drawable/btn_box_stroke_task">
+
+    <CheckBox
+        android:id="@+id/checkTask"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvNameItemTask"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Bài tập toán"
+            android:gravity="center|start"
+            android:layout_marginBottom="5dp"
+            android:textSize="17dp"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:id="@+id/tvTimeDeadline"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:gravity="end"
+            android:textColor="#FF0000"
+            android:layout_marginRight="10dp"
+            android:text="23-04"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/iconStar"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:gravity="center"
+        android:layout_gravity="top"
+        android:background="@drawable/icon_star_uncheck"/>
+
+</LinearLayout>

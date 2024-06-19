@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/background_1"
+    tools:context=".fragment.TaskFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvTaskUnComplete"
+            android:layout_marginLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="17dp"
+            android:text="Chưa hoàn thành"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:textColor="@color/pigmentGreen"
+            android:drawableEnd="@drawable/icon_drop_down"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rcvTaskUnComplete"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"/>
+
+        <TextView
+            android:id="@+id/tvTaskComplete"
+            android:layout_marginLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="17dp"
+            android:text="Đã hoàn thành hôm nay"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="5dp"
+            android:textColor="@color/pigmentGreen"
+            android:drawableEnd="@drawable/icon_drop_down"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rcvTaskComplete"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"/>
+
+        <TextView
+            android:id="@+id/btnCheckListTask"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/dartmouthGreen"
+            android:textSize="15dp"
+            android:textStyle="italic|bold"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="Kiểm tra tất cả nhiệm vụ đã hoàn thành"/>
+
+        <LinearLayout
+            android:id="@+id/FolderEmpty"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_gravity="center"
+                app:srcCompat="@drawable/ds_trong" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Đang trống"
+                android:textSize="20dp"
+                android:gravity="center"
+                android:textColor="@color/pigmentGreen"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/btnThemTask"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginBottom="25dp"
+        android:layout_gravity="bottom|end"
+        android:background="@drawable/icon_add_task"/>
+
+    <FrameLayout
+        android:id="@+id/progressBar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:visibility="gone"
+        android:background="@android:color/white">
+
+        <ProgressBar
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@android:color/transparent"
+            android:layout_gravity="center"
+            android:outlineAmbientShadowColor="@color/lavender"/>
+    </FrameLayout>
+</FrameLayout>

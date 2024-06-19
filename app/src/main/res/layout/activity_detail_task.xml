@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background_1"
+    tools:context=".DetailTaskActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:background="@color/background"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/btnLeftTask"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:background="@drawable/icon_back"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textSize="25dp"
+            android:gravity="center"
+            android:textColor="@color/dartmouthGreen"
+            android:textStyle="bold"
+            android:text="Thông tin"/>
+
+        <TextView
+            android:id="@+id/btnMoreTask"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:textSize="40dp"
+            android:background="@drawable/icon_more_vert"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvTieuDeTask"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:hint="Tiêu đề"
+        android:textSize="20dp"
+        android:paddingLeft="20dp"
+        android:inputType="text"
+        android:gravity="center|left"
+        android:background="@drawable/edt_box_stroke_no" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/edtTieuDeTask"
+        android:background="#E8D9D9" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:text="Ngày đến hạn:"
+            android:textSize="20dp"
+            android:textColor="@color/pigmentGreen"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/tvThoiGianTask"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center|left"
+            android:hint="....."
+            android:layout_marginLeft="10dp"
+            android:textSize="20dp"
+            android:inputType="text"
+            android:drawableEnd="@drawable/icon_calendar"
+            android:paddingRight="20dp"
+            android:background="@drawable/edt_box_stroke_no" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:text="Thời gian:"
+            android:textSize="20dp"
+            android:textColor="@color/pigmentGreen"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/tvThoiGianTimeTask"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center|left"
+            android:hint="....."
+            android:layout_marginLeft="10dp"
+            android:textSize="20dp"
+            android:inputType="text"
+            android:drawableEnd="@drawable/icon_time"
+            android:paddingRight="20dp"
+            android:background="@drawable/edt_box_stroke_no" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/edtTieuDeTask"
+        android:background="#E8D9D9" />
+
+    <LinearLayout
+        android:id="@+id/linearTaskCom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="20dp">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:text="Ngày hoàn thành:"
+            android:textSize="20dp"
+            android:textColor="@color/pigmentGreen"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/tvThoiGianTaskCom"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center|left"
+            android:hint="....."
+            android:layout_marginLeft="10dp"
+            android:textSize="20dp"
+            android:inputType="text"
+            android:drawableEnd="@drawable/icon_calendar"
+            android:paddingRight="20dp"
+            android:background="@drawable/edt_box_stroke_no" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="20dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:text="Ghi chú  "
+            android:textSize="20dp"
+            android:textColor="@color/pigmentGreen"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/tvNoiDungTask"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nội dung"
+            android:textSize="19dp"
+            android:inputType="textMultiLine"
+            android:gravity="center|left"
+            android:paddingRight="20dp"
+            android:background="@drawable/edt_box_stroke_no" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="20dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:text="Ảnh"
+            android:textSize="20dp"
+            android:textColor="@color/pigmentGreen"
+            android:gravity="center"/>
+
+        <ImageView
+            android:id="@+id/imageViewTask"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            app:srcCompat="@drawable/icon_image_task" />
+    </LinearLayout>
+</LinearLayout>

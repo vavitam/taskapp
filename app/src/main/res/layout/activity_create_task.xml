@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background_1"
+    tools:context=".CreateTaskActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:background="@color/background"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/btnLeftTask"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:background="@drawable/icon_back"/>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <LinearLayout
+            android:id="@+id/btnCreateTask"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/btn_box_stroke_task2">
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:textSize="20dp"
+                android:gravity="center"
+                android:text="Tạo"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/edtTieuDeTask"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:hint="Tiêu đề"
+        android:textSize="20dp"
+        android:inputType="text"
+        android:paddingLeft="20dp"
+        android:gravity="center|left"
+        android:background="@drawable/edt_box_stroke_no" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/edtTieuDeTask"
+        android:background="#E8D9D9" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:text="Ngày đến hạn:"
+            android:textSize="20dp"
+            android:paddingLeft="20dp"
+            android:textColor="@color/pigmentGreen"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/edtThoiGianTask"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center|left"
+            android:hint="dd/MM/yyyy"
+            android:layout_marginLeft="10dp"
+            android:textSize="20dp"
+            android:inputType="text"
+            android:drawableEnd="@drawable/icon_calendar"
+            android:paddingRight="10dp"
+            android:background="@drawable/edt_box_stroke_no"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:text="Thời gian:"
+            android:textSize="20dp"
+            android:paddingLeft="20dp"
+            android:textColor="@color/pigmentGreen"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/edtThoiGianTimeTask"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center|left"
+            android:hint="HH:mm"
+            android:layout_marginLeft="10dp"
+            android:textSize="20dp"
+            android:inputType="text"
+            android:drawableEnd="@drawable/icon_time"
+            android:paddingRight="10dp"
+            android:background="@drawable/edt_box_stroke_no"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/edtTieuDeTask"
+        android:background="#E8D9D9" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="20dp"
+
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:text="Ghi chú  "
+            android:textSize="20dp"
+            android:textColor="@color/pigmentGreen"
+            android:gravity="center"/>
+
+        <EditText
+            android:id="@+id/edtNoiDungTask"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nội dung"
+            android:textSize="19dp"
+            android:inputType="textMultiLine"
+            android:maxLines="5"
+            android:gravity="center|left"
+            android:paddingRight="10dp"
+            android:background="@drawable/edt_box_stroke_no" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/btnImageTask"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:text="Ảnh  "
+            android:paddingLeft="20dp"
+            android:textSize="20dp"
+            android:textColor="@color/pigmentGreen"
+            android:gravity="center"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/imageViewTask"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:visibility="gone"
+                app:srcCompat="@drawable/icon_image_task" />
+
+            <Button
+                android:id="@+id/btnDeleteImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/imageViewTask"
+                android:layout_alignEnd="@id/imageViewTask"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="5dp"
+                android:background="@android:color/transparent"
+                android:text="X"
+                android:textColor="@color/pigmentGreen"
+                android:textSize="30dp"
+                android:visibility="gone"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

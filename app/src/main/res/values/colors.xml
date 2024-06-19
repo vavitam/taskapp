@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="light">#D8D2D2</color>
+    <color name="blue">#D7D9FA</color>
+    <color name="darkBlue">#101BD5</color>
+    <color name="green">#B2F2BB</color>
+    <color name="darkGreen">#225C27</color>
+    <color name="darkYellow">#DDBE44</color>
+    <color name="lavender">#8692f7</color>
+    <color name="background">#ECEDF4</color>
+    <color name="midnightGreen">#073B3A</color>
+    <color name="dartmouthGreen">#0B6E4F</color>
+    <color name="pigmentGreen">#08A045</color>
+</resources>
